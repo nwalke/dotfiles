@@ -19,18 +19,18 @@ source "${ZINIT_HOME}/zinit.zsh"
 # Homebrew
 which brew > /dev/null 2>&1
 if [ $? -eq 1 ]; then
-	#Cheat, if we don't have brew, install xcode command line utils too
-	xcode-select --install
-	/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-	brew install font-fira-code-nerd-font
-	brew install fzf
-	brew install zoxide
-	brew install pre-commit
-	brew install shellcheck
-	brew install diff-so-fancy
-	brew install nvm
-	brew install pnpm
-	git config --global core.pager "diff-so-fancy | less --tabs=4 -RF"
+    #Cheat, if we don't have brew, install xcode command line utils too
+    xcode-select --install
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    brew install font-fira-code-nerd-font
+    brew install fzf
+    brew install zoxide
+    brew install pre-commit
+    brew install shellcheck
+    brew install diff-so-fancy
+    brew install nvm
+    brew install pnpm
+    git config --global core.pager "diff-so-fancy | less --tabs=4 -RF"
     git config --global interactive.diffFilter "diff-so-fancy --patch"
     git config --global color.ui true
     git config --global color.diff-highlight.oldNormal    "red bold"
